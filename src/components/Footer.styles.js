@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { PRIMARY_COLOR } from "../utils/constants";
 
 const FooterStyles = styled.footer``;
 
@@ -15,6 +14,9 @@ const Component = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  p:hover {
+    color: #0d60d8;
+  }
   &:last-of-type {
     max-width: 20%;
     p {
@@ -23,7 +25,6 @@ const Component = styled.div`
     }
     align-items: flex-end;
   }
-  /* min-height: 120px; */
 `;
 
 const Flex = styled.div`
@@ -66,7 +67,5 @@ const Second = styled.div`
     color: #3296ff;
   }
 `;
-
-// const Address = styled.div``;
 
 export { FooterStyles, Component, P, Img, Flex, First, Second };

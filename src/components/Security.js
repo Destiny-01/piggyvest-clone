@@ -58,7 +58,9 @@ export default function Security() {
             secured by 256 bits SSL security encryption to ensure that your
             information is comepletely protected from fraud.
           </P>
-          <A href="#">Learn more &gt;</A>
+          <A href="#" className="line-hover">
+            Learn more &gt;
+          </A>
         </Second>
       </SecurityStyles>
       <PFlex>
@@ -167,7 +169,6 @@ export default function Security() {
         </Grid>
       </PFlex>
       <InvestmentContainer>
-        {/* <Img src={SecImg} alt="security" /> */}
         <img src={InvestmentImg} alt="investment" />
         <Investment>
           <Returns>Up to 25% Returns</Returns>
@@ -176,7 +177,9 @@ export default function Security() {
             Invest securely and confidently on the go. Grow your money
             confidently by investing in pre-vetted investment opportunities.
           </P>
-          <A href="#">Learn more about Investments &gt;</A>
+          <A href="#" className="line-hover">
+            Learn more about Investments &gt;
+          </A>
         </Investment>
       </InvestmentContainer>
       <Flex>
@@ -188,7 +191,7 @@ export default function Security() {
             specifically helping them shape how they spend and save for future
             responsibilities.
           </P>
-          <IconFlex>
+          <IconFlex className="a">
             <Svg
               xmlns="http://www.w3.org/2000/svg"
               width="33"
@@ -213,7 +216,7 @@ export default function Security() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             width: "100%",
-            paddingTop: "34.15%",
+            paddingTop: "34.6%",
             height: "10px",
           }}
         ></div>

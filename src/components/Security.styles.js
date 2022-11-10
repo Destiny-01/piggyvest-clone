@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { PRIMARY_COLOR } from "../utils/constants";
-import { ButtonLink as ButtonLinks } from "./Hero.styles";
 
 const SecurityContainer = styled.div`
   margin-top: 12rem;
@@ -44,18 +43,33 @@ const A = styled.a`
   text-decoration: none;
   font-weight: 500;
   color: #0d60d8;
+  &.line-hover {
+    background-image: linear-gradient(180deg, transparent 65%, #d0e2fc 0);
+    transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    &:last-of-type {
+      background-image: linear-gradient(180deg, transparent 65%, #f6dbf8 0);
+    }
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
 `;
 
 const Button = styled.button`
   padding: 16px;
   font-weight: 700;
+  cursor: pointer;
   font-size: 20px;
-  /* width: 240px; */
   border: none;
   border-radius: 12px;
   color: white;
-  /* margin-top: 12px; */
   background-color: rgba(12, 24, 37, 1);
+  transition: background-color 0.8s;
+  &:hover {
+    background-color: #0d60d8;
+  }
 `;
 
 const P = styled.p`
@@ -81,9 +95,7 @@ const Img = styled.img`
   margin-left: auto;
 `;
 
-const TinyImg = styled.img`
-  /* border-radius: ; */
-`;
+const TinyImg = styled.img``;
 
 const Second = styled.div`
   max-width: 60%;
@@ -111,19 +123,28 @@ const PFlex = styled(Flex)`
   max-width: 88%;
   margin: 0 auto;
   justify-content: space-between;
-  /* margin-right: -15px;
-  margin-left: -15px; */
 `;
 
 const IconFlex = styled(Flex)`
   max-height: 30px;
   transition: margin-left 0.2s ease-out;
+  &.a {
+    background-image: linear-gradient(
+      180deg,
+      transparent 65%,
+      hsla(0, 0%, 100%, 0.4235294117647059) 0
+    );
+    transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    &:hover {
+      background-size: 115px 100%;
+    }
+    cursor: pointer;
+  }
 `;
 
-const Svg = styled.svg`
-  /* position: static; */
-  /* vertical-align: bottom; */
-`;
+const Svg = styled.svg``;
 
 const Grid = styled.div`
   display: grid;
@@ -151,7 +172,6 @@ const Build = styled.div`
 const InvestmentContainer = styled(Flex)`
   max-width: 90%;
   margin: 9rem auto;
-  /* justify-content: space-around; */
   img {
     margin-left: 3.2rem;
   }
@@ -193,9 +213,8 @@ const Saver = styled.div`
   p {
     padding-right: 4rem;
     padding-bottom: 2.5rem;
-    &.meet {
-      color: white;
-    }
+    color: white;
+    font-size: 17px;
   }
 `;
 
@@ -226,9 +245,6 @@ const Customer = styled(Flex)`
   &.sticky {
     position: static;
   }
-  /* padding-bottom: 3rem; */
-  /* align-items: center; */
-  /* align-items: flex-end; */
 `;
 
 const ButtonLink = styled.div`
@@ -312,7 +328,6 @@ const Single = styled.div`
 
 const Date = styled.p`
   float: right;
-  /* font-size: 12px; */
   color: #727272;
 `;
 

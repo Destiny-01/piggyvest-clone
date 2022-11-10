@@ -20,11 +20,15 @@ const Button = styled.button`
   padding: 16px;
   font-weight: 700;
   font-size: 17px;
-  /* width: 240px; */
   border: none;
   border-radius: 12px;
   color: white;
   background-color: rgba(12, 24, 37, 1);
+  transition: background-color 0.8s;
+  cursor: pointer;
+  &:hover {
+    background-color: #0d60d8;
+  }
 `;
 
 const Main = styled.div`
@@ -60,9 +64,10 @@ const ButtonLink = styled(Button)`
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: ${PRIMARY_COLOR};
-  transition: top ease 0.5s;
+  transition: top ease 0.5s !important;
   position: static;
   &:hover {
+    background-color: white;
     top: -5px;
     border: 1px solid #bbb !important;
   }

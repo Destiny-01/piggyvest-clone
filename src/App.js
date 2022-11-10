@@ -32,11 +32,8 @@ function App() {
       }}
     >
       <Globals />
-      {/* <div
-      > */}
       <Navbar />
       <Hero />
-      {/* </div> */}
       <Security />
       <Footer />
     </AppStyles>
